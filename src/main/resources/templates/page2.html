@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+welcome to spring 16 <p th:text="${uobj}">user name</p>
+<br>
+ID <p th:text="${uobj.uid}">uid</p><br>
+Name <p th:text="${uobj.name}">uid</p><br>
+Address <p th:text="${uobj.add}">uid</p><br>
+
+<div th:object="${uobj}">
+ID <p th:text="*{uid}">uid</p><br>
+Name <p th:text="*{name}">uid</p><br>
+Address <p th:text="*{add}">uid</p><br>
+
+</div>
+</body>
+</html>
